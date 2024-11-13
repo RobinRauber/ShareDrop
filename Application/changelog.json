@@ -1,0 +1,24 @@
+[
+    {
+        "version": "1.0.0",
+        "date": "2023-03-28",
+        "title": "Initial Release",
+        "features": [
+            "- Simply share Files in your local network",
+            "- Support for Base64 encoding and decoding",
+            "- Progress bar for file upload and download",
+            "- Support for multiple file upload and download"
+        ]
+    },
+    {
+        "version": "1.0.1",
+        "date": "2023-03-29",
+        "title": "Hotfix for file download & upload",
+        "features": [
+            "- Fixed: download didn't start after receiving all Files",
+            "- Fixed: on file selection chanched didn't start uploading",
+            "- Fixed: ip of the host can't be found",
+            "- Reduced Chunk size to 1024 bytes for smoother upload and download experience"
+        ]
+    }
+]

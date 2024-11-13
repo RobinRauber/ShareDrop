@@ -1,0 +1,219 @@
+/* Path: Templates/style.css */
+
+:root {
+    --gradient-color: linear-gradient(#73D1F8 0%,#5B8BED 100%);
+  }
+  
+  body {
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--gradient-color);
+      background-size: 100vw 100vh;
+      background-repeat: no-repeat;
+  }
+  
+  .window {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background: #00000030;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .window .titlebar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      height: 50px;
+      background: #f0f7ff;
+      border-radius: 10px 10px 0 0;
+  }
+  
+  .window .titlebar > div {
+      display: flex;
+      align-items: center;
+  }
+  
+  .window .titlebar .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: -50px;
+  }
+  
+  .window .titlebar .title h1 {
+      margin-top: 18px;
+      font-size: 20px;
+  }
+  
+  .window .titlebar .title h2 {
+      margin-top: -15px;
+      font-size: 20px;
+      font-weight: 400;
+      opacity: 50%;
+  }
+  
+  .window .titlebar .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .window .titlebar .buttons img {
+      width: 40px;
+      height: 40px;
+      margin: 0;
+      margin-left: 30px;
+      padding: 0;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .window .titlebar .version h2{
+      font-size: 20px;
+      font-weight: 100 !important;
+      opacity: 50%;
+      margin-left: -100px;
+      margin-right: 20px;
+  }
+  
+  .window .badge{
+      position: absolute;
+      top: -30px;
+      left: 17px;
+      background-color: #267AF9;
+      padding: 3px 15px;
+      border-radius: 20px;
+      color: #fff;
+  }
+  
+  .userinfo {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 50%;
+      text-align: center;
+      font-size: 20px;
+      color: #fff;
+  }
+  
+  .shareiconlarge{
+      width: 120px;
+      height: 120px;
+      margin-bottom: -10px;
+  }
+  
+  .circles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 50%;
+      border-radius: 10px;
+  }
+  
+  .info{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      opacity: 75%;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 900;
+      color: #fff;
+  }
+  
+  .hidden {
+      display: none;
+  }
+  
+  .users {
+      position: absolute;
+      top: 70px;
+      width: 100%;
+      height: 100% - 70px;
+  }
+  .user {
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .user img {
+      width: 40px;
+      height: 40px;
+  }
+  .user h2 {
+      position: absolute;
+      font-size: 20px;
+      font-weight: 500;
+      top: 90%;
+      background-color: #fff;
+      padding: 3px 25px;
+      border-radius: 20px;
+  }
+  .user p {
+      position: absolute;
+      font-size: 20px;
+      top: 120%;
+      width: 200px;
+      text-align: center;
+  }
+
+  .progressOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.progressWindow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.progressWindow h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.progressBar {
+    width: 80%;
+    height: 20px;
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #007bff;
+}
+.progressText {
+    text-align: center;
+}

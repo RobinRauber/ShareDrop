@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareDrop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/getOS.js" defer></script>
+    <script src="src/fileDecoding.js" defer></script>
+    <script src="src/userUI.js" defer></script>
+    <script src="src/progressbar.js" defer></script>
+    <script src="src/animation.js" defer></script>
+    <script src="src/websocket.js" defer></script>
+    <script src="src/eventlistener.js" defer></script>
+</head>
+<body>
+    <div class="window">
+        <div class="titlebar">
+            <div class="buttons">
+                <p class="badge">Sharing</p>
+                <img src="icns/share.svg" alt="Share">
+                <img src="icns/close.svg" alt="Close">
+            </div>
+            <div class="title">
+                <h1>Share Link</h1>
+                <h2>Label</h2>
+            </div>
+            <div class="version">
+                <h2>Label</h2>
+            </div>
+        </div>
+        <div class="userinfo">
+            <img class="shareiconlarge" src="icns/sharelarge.svg" alt="">
+            <p>You are known as<br><strong>connecting...</strong></p>
+        </div>
+        <p class="info">Open and copy the share link to other browsers and start sharing</p>
+        <canvas class="circles"></canvas>
+        <div class="users"></div>
+    </div>
+        <div class="progressOverlay hidden">
+            <div class="progressWindow">
+                <h1>Uploading...</h1>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+                <p class="progressText">0%</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
